@@ -1,0 +1,389 @@
+:root {
+    --color-cabecera: #f5c542;
+    --color-lateral: #fcb900;
+    --color-lateral-seleccionado: #ebac00;
+    --color-cabecera-tarjeta: #f5b002;
+    --color-elemento-seleccionado: #c7c7c7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cabecera */
+
+.cabecera {
+    background-color: var(--color-cabecera);    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+    margin: 0rem 1.5rem;
+    cursor: pointer;
+}
+
+.icon-menu {
+    border-radius: 50%;
+}
+
+.icon-user {
+    filter: invert(1);
+    padding: 10px;
+}
+
+.contenedor-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.logo2 {
+    display: none;
+}
+
+@media (max-width: 1424px) {    
+    .logo1 {
+        display: none;
+    }
+    
+    .logo2 {
+        display: block;
+    }
+}
+
+.contenedor-logo:hover {
+    cursor: pointer;
+    color: white;
+    filter: brightness(1.25);  
+}
+
+.icon-menu:hover {
+    filter: invert(1);
+}
+
+.icon-user:hover {
+    filter: invert(0);
+}
+
+/* Menu Lateral */
+.menu-lateral {    
+    height: calc(100% - 70px);
+    width: 20%;
+    background-color: var(--color-lateral);
+    position: fixed;
+    display: block;
+    margin-top: 70px;
+}
+
+.contenedor-lateral {
+    display: flex;
+    flex-direction: column;    
+}
+
+/*.contenedor-lateral div {
+    padding: 1rem;
+    color: white;
+}*/
+
+.elemento-barra {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.elemento-barra:hover {
+    background-color: var(--color-lateral-seleccionado);
+    font-size: 20px;
+}
+
+@media (max-width: 1424px) {    
+    .menu-lateral {
+        display: none;
+    }
+}
+
+
+/* Cuerpo */
+.contenedor-cuerpo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20%;
+}
+
+.columna-1 {
+    width: 25%;
+    margin-top: 5.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.75rem;
+}
+
+.columna-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-top: 10.75rem;
+}
+
+.flor {
+    width: 100%;
+    filter: invert(74%) sepia(50%) saturate(7196%) hue-rotate(158deg) brightness(90%) contrast(101%) 
+    drop-shadow(2px 2px 0 black) drop-shadow(-2px -2px 0 black) drop-shadow(2px -2px 0 black) drop-shadow(-2px 2px 0 black);
+}
+
+.columna-3 {
+    width: 25%;
+    margin-top: 5.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.75rem;
+}
+
+.tarjeta {
+    color: white;
+    width: 70%;
+}
+
+.cabecera-tarjeta {
+    background-color: var(--color-cabecera-tarjeta);    
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.cuerpo-tarjeta {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-top: 0px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.elemento-tarjeta {
+    /*display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;*/
+    color: #000;
+    font-size: 18px;
+    width: 100%;
+}
+
+.contenedor-caja:hover {
+    background-color: var(--color-elemento-seleccionado);
+    filter: grayscale(0);
+}
+
+.contenedor-caja {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    border-radius: 4px;
+    padding: 0.5rem;
+    color: #000;
+    font-size: 18px;
+    width: 100%;
+    filter: grayscale(1);
+}
+
+.opc-radio {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.caja-color {
+    background-color: #000;    
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+.opc-radio + .contenedor-caja {    
+    cursor: pointer;
+}
+
+.opc-radio:checked + .contenedor-caja {    
+    background-color: var(--color-elemento-seleccionado);
+    filter: grayscale(0);
+}
+
+.amarillo {
+    background-color: #fcda17;
+}
+
+.blanco {
+    background-color: white;
+}
+
+.naranja {
+    background-color: #fca417;
+}
+
+.rojo {
+    background-color: #ff3d3d;
+}
+
+.verde {
+    background-color: #64e32d;
+}
+
+.caja-imagen-elemento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-hoja {
+    height: 30px;
+    width: 53px;
+}
+
+.caja-hoja img {
+    width: 100%;
+}
+
+.caja-morfologia {
+    height: 30px;
+    width: 30px;
+}
+
+.caja-morfologia img {
+    height: 100%;
+}
+
+.caja-tallo {
+    height: 30px;
+    width: 30px;
+}
+
+.caja-tallo img {
+    height: 100%;
+}
+
+.caja-flor {
+    height: 30px;
+    width: 30px;
+}
+
+.caja-flor img {
+    height: 100%;
+}
+
+.caja-fruto {
+    height: 30px;
+    width: 30px;
+}
+
+.caja-fruto img {
+    height: 100%;
+}
+
+.caja-sepalo {
+    height: 30px;
+    width: 30px;
+}
+
+.caja-sepalo img {
+    height: 100%;
+}
+
+.caja-foliolo {
+    height: 30px;
+    width: 30px;
+}
+
+.caja-foliolo img {
+    height: 100%;
+}
+
+@media (max-width: 1424px) {    
+    .contenedor-cuerpo {
+        margin: 0;
+    }
+
+    .columna-1, .columna-2, .columna-3 {
+        width: 100%;
+        margin-top: 5.75rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .columna-2 {
+        order: -1;
+    }
+
+    .flor {
+        width: fit-content;
+    }
+
+    .tarjeta {
+        width: 35%;
+    }
+}
+
+
+@media (max-width: 500px) {    
+    .flor {
+        max-width: 300px;
+    }
+
+    .tarjeta {
+        width: 80%;
+    }
+}
+
+.boton {
+    height: 45px;
+    margin: 3rem;
+    width: 100%;
+    color: white;
+    background-color: var(--color-lateral);
+    border-width: 0;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.boton:hover {
+    background-color: var(--color-lateral-seleccionado);
+    cursor: pointer;
+}

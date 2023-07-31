@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Botánica</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/app.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+    <header>
+
+        <div class="cabecera">
+            <img class="icon icon-menu" src="img/MenuIcon.jpg" alt="menu">
+
+            <div class="contenedor-logo">
+                <img class="icon logo1" src="img/Logo1.png" alt="logo">
+                <span class="logo1 titulo">Botánica</span>
+                <img class="icon logo2" src="img/Logo2.png" alt="logo">
+            </div>
+            
+            <img class="icon icon-user" src="img/UserIcon.png" alt="usuario">
+        </div>
+
+    </header>
+
+    <aside class="menu-lateral">
+
+        <!-- #region
+        <div class="contenedor-lateral">
+
+            <div>Usuario</div>
+            <div>Usuario</div>
+            <div>Usuario</div>
+            <div>Usuario</div>
+            
+        </div>
+        -->
+
+        <ul class="contenedor-lateral">
+
+            <li><a href="" class="elemento-barra">Morfología</a></li>
+            <li><a href="" class="elemento-barra">Tipos de Flor</a></li>
+            <li><a href="" class="elemento-barra">Tipos de Hojas</a></li>
+            <li><a href="" class="elemento-barra">Tipos de Tallo</a></li>
+            <li><a href="" class="elemento-barra">Colores de Flor</a></li>
+
+        </ul>
+
+    </aside>
+
+    <section>
+
+        <form action="#" class="contenedor-cuerpo">
+
+            <div class="columna-1">
+                
+                <div class="tarjeta">                
+                    <div class="cabecera-tarjeta">
+                        <span>Morfología</span>
+                    </div>
+                    <div class="cuerpo-tarjeta">                    
+                        <div class="elemento-tarjeta">
+                            <label>
+                                <input type="radio" class="opc-radio" name="morfologia" value="anual">
+                                <div class="contenedor-caja">
+                                    <div class="caja-imagen-elemento caja-morfologia">
+                                        <img src="img/morf-anual.png" alt="morfologia-anual">
+                                    </div>
+                                    <span>Anual</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="elemento-tarjeta">
+                            <label>
+                                <input type="radio" class="opc-radio" name="morfologia" value="bulbosa">
+                                <div class="contenedor-caja">
+                                    <div class="caja-imagen-elemento caja-morfologia">
+                                        <img src="img/morf-bulbosa.png" alt="morfologia-bulbosa">
+                                    </div>
+                                    <span>Bulbosa</span>
+                                </div>
+                            </label>                        
+                        </div>
+                        <div class="elemento-tarjeta">
+                            <label>
+                                <input type="radio" class="opc-radio" name="morfologia" value="herbacea">
+                                <div class="contenedor-caja">
+                                    <div class="caja-imagen-elemento caja-morfologia">
+                                        <img src="img/morf-herbacea.png" alt="morfologia-herbacea">
+                                    </div>
+                                    <span>Herbácea</span>
+                                </div>
+                            </label>                        
+                        </div>
+                    </div>        
+                </div>
+
+                <div class="tarjeta">                
+                    <div class="cabecera-tarjeta">
+                        <span>Tipo de Flor</span>
+                    </div>
+                    <div class="cuerpo-tarjeta">                    
+                        <div class="elemento-tarjeta">
+                            <label>
+                                <input type="radio" class="opc-radio" name="flor" value="cabezuela">
+                                <div class="contenedor-caja">
+                                    <div class="caja-imagen-elemento caja-flor">
+                                        <img src="img/flor-cabezuela.png" alt="flor-cabezuela">
+                                    </div>
+                                    <span>Cabezuela</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="elemento-tarjeta">
+                            <label>
+                                <input type="radio" class="opc-radio" name="flor" value="copa">
+                                <div class="contenedor-caja">
+                                    <div class="caja-imagen-elemento caja-flor">
+                                        <img src="img/flor-copa.png" alt="flor-copa">
+                                    </div>
+                                    <span>Copa</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="elemento-tarjeta">
+                            <label>
+                                <input type="radio" class="opc-radio" name="flor" value="solitario">
+                                <div class="contenedor-caja">
+                                    <div class="caja-imagen-elemento caja-flor">
+                                        <img src="img/flor-solitario.png" alt="flor-solitario">
+                                    </div>
+                                    <span>Solitario</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="elemento-tarjeta">
+                            <label>
+                                <input type="radio" class="opc-radio" name="flor" value="trompeta">
+                                <div class="contenedor-caja">
+                                    <div class="caja-imagen-elemento caja-flor">
+                                        <img src="img/flor-trompeta.png" alt="flor-trompeta">
+                                    </div>
+                                    <span>Trompeta</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta">                
+                    <div class="cabecera-tarjeta">
+                        <span>¿Posee Fruto?</span>
+                    </div>
+                    <div class="cuerpo-tarjeta">                    
+                        <div class="elemento-tarjeta">
+                            <label>
+                                <input type="radio" class="opc-radio" name="fruto" value="si">
+                                <div class="contenedor-caja">
+                                    <div class="caja-imagen-elemento caja-fruto">
+                                        <img src="img/si-fruto.png" alt="si-fruto">
+                                    </div>
+                                    <span>Sí</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="elemento-tarjeta">
+                            <label>
+                                <input type="radio" class="opc-radio" name="fruto" value="no">
+                                <div class="contenedor-caja">
+                                    <div class="caja-imagen-elemento caja-fruto">
+                                        <img src="img/no-fruto.png" alt="no-fruto">
+                                    </div>
+                                    <span>No</span>
+                                </div>
+                            </label>                        
+                        </div>
+                    </div>        
+                </div>
+
+                <div class="tarjeta">                
+                    <div class="cabecera-tarjeta">
+                        <span>¿Posee Sépalo?</span>
+                    </div>
+                    <div class="cuerpo-tarjeta">                    
+                        <div class="elemento-tarjeta">
+                            <label>
+                                <input type="radio" class="opc-radio" name="sepalo" value="si">
+                                <div class="contenedor-caja">
+                                    <div class="caja-imagen-elemento caja-sepalo">
+                                        <img src="img/si-sepalo.png" alt="si-sepalo">
+                                    </div>
+                                    <span>Sí</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="elemento-tarjeta">
+                            <label>
+                                <input type="radio" class="opc-radio" name="sepalo" value="no">
+                                <div class="contenedor-caja">
+                                    <div class="caja-imagen-elemento caja-sepalo">
+                                        <img src="img/no-sepalo.png" alt="no-sepalo">
+                                    </div>
+                                    <span>No</span>
+                                </div>
+                            </label>                        
+                        </div>
+                    </div>        
+                </div>
+
+                <div class="tarjeta">                
+                    <div class="cabecera-tarjeta">
+                        <span>¿Posee Foliolo?</span>
+                    </div>
+                    <div class="cuerpo-tarjeta">                    
+                        <div class="elemento-tarjeta">
+                            <label>
+                                <input type="radio" class="opc-radio" name="foliolo" value="si">
+                                <div class="contenedor-caja">
+                                    <div class="caja-imagen-elemento caja-foliolo">
+                                        <img src="img/si-foliolo.png" alt="si-foliolo">
+                                    </div>
+                                    <span>Sí</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="elemento-tarjeta">
+                            <label>
+                                <input type="radio" class="opc-radio" name="foliolo" value="no">
+                                <div class="contenedor-caja">
+                                    <div class="caja-imagen-elemento caja-foliolo">
+                                        <img src="img/no-foliolo.png" alt="no-foliolo">
+                                    </div>
+                                    <span>No</span>
+                                </div>
+                            </label>                        
+                        </div>
+                    </div>        
+                </div>
+
+            </div>
+
+            <div class="columna-2">
+                <img class="flor" src="img/flor-petalos.png" alt="flor">
+            </div>
+
+            <div class="columna-3">
+                
+                <div class="tarjeta">                
+                    <div class="cabecera-tarjeta">
+                        <span>Color de la Flor</span>
+                    </div>
+                    <div class="cuerpo-tarjeta">
+                        <div class="elemento-tarjeta">
+                            <label>
+                                <input type="radio" class="opc-radio" name="color" value="amarillo">
+                                <div class="contenedor-caja">
+                                    <div class="caja-color amarillo">
+                                    </div>
+                                    <span>Amarillo</span> 
+                                </div>
+                            </label>
+                        </div>
+                        <div class="elemento-tarjeta">
+                            <label>
+                                <input type="radio" class="opc-radio" name="color" value="blanco">
+                                <div class="contenedor-caja">
+                                    <div class="caja-color blanco">
+                                    </div>
+                                    <span>Blanco</span> 
+                                </div>
+                            </label>
+                        </div>
+                        <div class="elemento-tarjeta">
+                            <label>
+                                <input type="radio" class="opc-radio" name="color" value="naranja">
+                                <div class="contenedor-caja">
+                                    <div class="caja-color naranja">
+                                    </div>
+                                    <span>Naranja</span>
+                                </div>
+                            </label>
+                        </div>  
+                        <div class="elemento-tarjeta">
+                            <label>
+                                <input type="radio" class="opc-radio" name="color" value="rojo">
+                                <div class="contenedor-caja">
+                                    <div class="caja-color rojo">
+                                    </div>
+                                    <span>Rojo</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="elemento-tarjeta">
+                            <label>
+                                <input type="radio" class="opc-radio" name="color" value="verde">
+                                <div class="contenedor-caja">
+                                    <div class="caja-color verde">
+                                    </div>
+                                    <span>Verde</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>                
+                </div>
+
+                <div class="tarjeta">                
+                    <div class="cabecera-tarjeta">
+                        <span>Tipo de Hoja</span>
+                    </div>
+                    <div class="cuerpo-tarjeta">                    
+                        <div class="elemento-tarjeta">
+                            <label>
+                                <input type="radio" class="opc-radio" name="hoja" value="cordada">
+                                <div class="contenedor-caja">
+                                    <div class="caja-imagen-elemento caja-hoja">
+                                        <img src="img/hoja-cordada.png" alt="hoja-cordada">
+                                    </div>
+                                    <span>Cordada</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="elemento-tarjeta">
+                            <label>
+                                <input type="radio" class="opc-radio" name="hoja" value="lanceolada">
+                                <div class="contenedor-caja">
+                                    <div class="caja-imagen-elemento caja-hoja">
+                                        <img src="img/hoja-lanceolada.png" alt="hoja-lanceolada">
+                                    </div>
+                                    <span>Lanceolada</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="elemento-tarjeta">
+                            <label>
+                                <input type="radio" class="opc-radio" name="hoja" value="lineal">
+                                <div class="contenedor-caja">
+                                    <div class="caja-imagen-elemento caja-hoja">
+                                        <img src="img/hoja-lineal.png" alt="hoja-lineal">
+                                    </div>
+                                    <span>Lineal alargada</span>
+                                </div>
+                            </label>
+                            
+                        </div>
+                        <div class="elemento-tarjeta">
+                            <label>
+                                <input type="radio" class="opc-radio" name="hoja" value="lobulada">
+                                <div class="contenedor-caja">
+                                    <div class="caja-imagen-elemento caja-hoja">
+                                        <img src="img/hoja-lobulada.png" alt="hoja-lobulada">
+                                    </div>
+                                    <span>Lobulada</span>
+                                </div>
+                            </label>                        
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta">                
+                    <div class="cabecera-tarjeta">
+                        <span>Tipo de Tallo</span>
+                    </div>
+                    <div class="cuerpo-tarjeta">                    
+                        <div class="elemento-tarjeta">
+                            <label>
+                                <input type="radio" class="opc-radio" name="tallo" value="recto">
+                                <div class="contenedor-caja">
+                                    <div class="caja-imagen-elemento caja-tallo">
+                                        <img src="img/tallo-recto.png" alt="tallo-recto">
+                                    </div>
+                                    <span>Tallo Recto</span>
+                                </div>
+                            </label>                        
+                        </div>
+                        <div class="elemento-tarjeta">
+                            <label>
+                                <input type="radio" class="opc-radio" name="tallo" value="largo-delgado">
+                                <div class="contenedor-caja">
+                                    <div class="caja-imagen-elemento caja-tallo">
+                                        <img src="img/tallo-largo.png" alt="tallo-largo-delgado">
+                                    </div>
+                                    <span>Tallo Largo Delgado</span>
+                                </div>
+                            </label>                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <input type="submit" class="boton" value="Enviar Datos">
+
+        </form>
+
+    </section>
+
+    
+
+</body>
+</html>
